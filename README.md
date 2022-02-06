@@ -10,6 +10,9 @@ EMug provides you a Python package for electromagnetic field analysis.
 Electromagnetic radiation from infinitesimal electric current element
 
 ### example 1 - Electromagnetic radiation from Px dipole
+```bash
+python -m examples.dipole_emission
+```
 ![example 1 - Electromagnetic radiation from Px dipole](docs/img/emug_example.PNG)
 
 ### example 2 - Electromagnetic radiation from Py dipole
