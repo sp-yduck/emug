@@ -1,14 +1,15 @@
 from math import pi
 import numpy as np
 
+from emug import EmugBase
 
-class ElectricDipole:
+
+class ElectricDipole(EmugBase):
     def __init__(self, moment, freq, dipole_direction=2):
+        super(ElectricDipole, self).__init__()
         """
         原点に位置する微小電流素片
         """
-        self.myu = 4*pi*1e-7
-        self.eps = 8.8541878128 * 1e-12
         self.freq = freq
         self.moment = moment
         self.omega = 2*pi*self.freq
